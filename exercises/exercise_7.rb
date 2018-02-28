@@ -12,4 +12,5 @@ puts "----------"
 # Your code goes here ...
 puts "Enter a store name: "
 store = gets.chomp
-Store.create(name: "store")
+new_store = Store.create(name: "store")
+puts new_store.errors.messages
